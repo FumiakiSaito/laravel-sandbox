@@ -1,0 +1,4 @@
+# dockerのイメージは本ファイルから生成
+
+FROM nginx:latest
+
