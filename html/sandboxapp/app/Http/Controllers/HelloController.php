@@ -7,23 +7,18 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    public function index($id='noname', $pass='unknown', Request $request, Response $response) {
-        $html = <<<EOF
-<html>
-<h1>Index</h1>
-<p>これはHelloコントローラのindexアクションです</p>
-<li>ID: {$id}</li>
-<li>PASS: {$pass}</li>
-<h3>Request</h3>
-<pre>$request</pre>
-<h3>Response</h3>
-<pre>$response</pre>
-</html>
-EOF;
-        $response->setContent($html);
-        return $response;
+    public function index() {
+        $data = ['msg' => 'お名前を入力してください'];
+        return view('hello.index', $data);
     }
 
+    public function post(Request $request)
+    {
+        $msg = $request->msg;
+        $data = ['msg' => 'こんにちは、'. $msg. 'さん'];
+        return view('hello.index', $data);
+
+    }
     public function other() {
         return <<<EOF
 <html>

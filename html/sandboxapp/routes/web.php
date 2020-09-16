@@ -58,7 +58,9 @@ EOF;
     return $html;
 });
 
+
 // コントローラを使用
 // コントローラ名@アクション名
-Route::get('hello/{id?}/{pass?}', 'HelloController@index');
+Route::get('hello', 'HelloController@index');
 
+Route::post('hello', 'HelloController@post');
