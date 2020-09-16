@@ -19,3 +19,6 @@ $ docker-compose up
 | ---- | ---- |
 |  Web  |  http://localhost:8080  |
 |  phpMyAdmin  |  http://localhost:8090  |
+
+
+
