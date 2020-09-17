@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // 自前のビューコンポーザ
+        App\Providers\HelloServiceProvider::class
+
     ],
 
     /*
