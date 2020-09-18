@@ -62,5 +62,7 @@ EOF;
 // コントローラを使用
 // コントローラ名@アクション名
 Route::get('hello', 'HelloController@index');
-
 Route::post('hello', 'HelloController@post');
+
+Route::get('form', 'FormController@index');
+Route::post('form', 'FormController@post');

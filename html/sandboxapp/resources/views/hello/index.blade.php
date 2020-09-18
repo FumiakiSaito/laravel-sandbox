@@ -28,6 +28,7 @@
 
     {{-- ビューコンポーザで設定した値を表示 HelloServiceProvider::boot() --}}
     <p>ViewComposer value<br>'view_message' = {{$view_message}}</p>
+
 @endsection
 
 @section('footer')
