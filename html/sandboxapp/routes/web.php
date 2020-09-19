@@ -66,3 +66,11 @@ Route::post('hello', 'HelloController@post');
 
 Route::get('form', 'FormController@index');
 Route::post('form', 'FormController@post');
+
+Route::get('db', 'DbController@index');
+
+Route::get('db/add', 'DbController@add');
+Route::post('db/add', 'DbController@create');
+
+Route::get('db/edit', 'DbController@edit');
+Route::post('db/edit', 'DbController@update');
