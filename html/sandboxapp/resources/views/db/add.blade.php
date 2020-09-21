@@ -1,6 +1,11 @@
 @extends('layouts.helloapp')
 @section('title', 'DB - 追加')
 
+@section('menubar')
+    @parent
+    追加ページ
+@endsection
+
 @section('content')
     <form action="/db/add" method="post">
         <table>

@@ -72,5 +72,15 @@ Route::get('db', 'DbController@index');
 Route::get('db/add', 'DbController@add');
 Route::post('db/add', 'DbController@create');
 
+Route::get('db/show', 'DbController@show');
+
 Route::get('db/edit', 'DbController@edit');
 Route::post('db/edit', 'DbController@update');
+
+Route::get('person', 'PersonController@index');
+Route::get('person/find', 'PersonController@find');
+Route::post('person/find', 'PersonController@search');
+Route::get('person/add', 'PersonController@add');
+Route::post('person/add', 'PersonController@create');
+
+

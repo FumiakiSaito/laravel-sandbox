@@ -1,6 +1,11 @@
 @extends('layouts.helloapp')
 @section('title', 'DB - 更新')
 
+@section('menubar')
+    @parent
+    更新ページ
+@endsection
+
 @section('content')
     <form action="/db/edit" method="post">
         <table>
