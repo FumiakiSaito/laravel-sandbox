@@ -13,4 +13,6 @@
 |  person  |  ORMで一覧  |
 |  person/find  |  ORMで検索  |
 |  person/add  |  ORMで登録  |
+|  person/edit?id=n  |  ORMで編集  |
+
 
