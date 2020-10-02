@@ -7,6 +7,7 @@
 @endsection
 
 @section('content')
+    <link href="/css/app.css" rel="stylesheet">
     <table>
         <tr>
             <th>Name</th>
@@ -24,6 +25,7 @@
         @endforeach
     </table>
 
+    {!! $items->links() !!}
 @endsection
 
 @section('footer')

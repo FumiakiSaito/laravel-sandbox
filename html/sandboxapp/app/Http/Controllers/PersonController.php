@@ -9,8 +9,9 @@ class PersonController extends Controller
 {
     public function index(Request $request)
     {
-        $items = Person::all();
-        dump($items);
+        $items = Person::paginate(2);
+        //$items = Person::all();
+        //dump($items);
 
         return view('person.index', ['items' => $items]);
     }

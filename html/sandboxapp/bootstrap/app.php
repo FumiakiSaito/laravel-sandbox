@@ -52,4 +52,7 @@ $app->singleton(
 |
 */
 
+// ページネーションでbootstrapを使うcss
+Illuminate\Pagination\AbstractPaginator::defaultView("pagination::bootstrap-4");
+
 return $app;
