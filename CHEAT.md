@@ -25,6 +25,18 @@ $ docker exec -it php_laravel_sandbox /bin/bash -c 'cd /var/www/html/sandboxapp 
 $ docker exec -it php_laravel_sandbox /bin/bash -c "cd /var/www/html/sandboxapp && composer install"
 ```
 
+## Bootstrapの導入
+```
+# Laravel/uiを使ってbootstrapを導入する
+
+# Laravel/uiを追加
+docker exec -it php_laravel_sandbox /bin/bash -c "cd /var/www/html/sandboxapp && composer require laravel/ui:^1.0 --dev"
+# UIコマンドを実行。これでpackage.jsonにbootstrapなどが追加される。sassにbootstrapのimport文が追加される。とか。
+docker exec -it php_laravel_sandbox /bin/bash -c 'cd /var/www/html/sandboxapp && php artisan ui bootstrap'
+# ビルド。これでpublic/css/app.cssが作成される。app.cssにbootstrapが入っている
+npm install && npm run dev
+```
+
 ## Docker
 ### コンテナに入る
 ``` 
