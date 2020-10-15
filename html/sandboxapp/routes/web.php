@@ -86,3 +86,7 @@ Route::get('person/edit', 'PersonController@edit');
 Route::post('person/edit', 'PersonController@update');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
