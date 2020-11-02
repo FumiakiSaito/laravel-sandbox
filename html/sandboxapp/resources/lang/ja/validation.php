@@ -156,6 +156,8 @@ return [
 
     'attributes' => [
         'name' => '名前',
+        'mail' => 'メールアドレス',
+        'age' => '年齢',
     ],
 
 ];

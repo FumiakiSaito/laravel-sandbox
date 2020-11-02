@@ -10,7 +10,7 @@ class FormController extends Controller
     public function index() {
 
 
-        return view('form.index', ['msg' => 'フォームを入力']);
+        return view('form.index', ['msg' => 'フォームを入力してください']);
     }
 
     public function post(Request $request)
@@ -25,6 +25,7 @@ class FormController extends Controller
             'name' => 'required',
             'mail' => 'email',
             'age' => 'numeric|between:0,150',
+            'ip' => 'nullable|ip'
         ];
 
         $this->validate($request, $validate_rule);
